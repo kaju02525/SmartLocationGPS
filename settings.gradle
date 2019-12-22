@@ -1,0 +1,2 @@
+include ':app', ':smartlocationgps'
+rootProject.name='LocationGPS'
