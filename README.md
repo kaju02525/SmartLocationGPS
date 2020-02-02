@@ -44,17 +44,17 @@ class MainActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRes
     }
 
     fun startUpdates(v: View) {
-        Locus.configure {
+        SmartLocation.configure {
             shouldResolveRequest = true
         }
-        Locus.startLocationUpdates(this) { result ->
+        SmartLocation.startLocationUpdates(this) { result ->
             result.location?.let(::onLocationUpdate)
             result.error?.let(::onError)
         }
     }
 
     fun stopUpdates(v: View) {
-        Locus.stopLocationUpdates()
+        SmartLocation.stopLocationUpdates()
         tv.text=""
     }
 
