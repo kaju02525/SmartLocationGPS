@@ -14,6 +14,8 @@ library to GPS Location and Network for current location them if needed.
 Add this line to build.gradle
 ```
 	 implementation 'com.github.kaju02525:SmartLocationGPS:0.0.1'
+	 implementation 'com.google.android.gms:play-services-location:17.0.0'
+
    
    maven { url 'https://jitpack.io' }
    
